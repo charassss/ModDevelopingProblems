@@ -1,0 +1,44 @@
+## 常见forge问题
+
+---
+
+---
+
+### ①JAVA_HOME
+
+![ERROR: JAVA_HOME is set to an invalid directory: XXX:\XXXX\XXXX](C:\Users\Chara\Desktop\1.jpg)
+
+这种情况一般是因为环境变量中的**JAVA_HOME**出现了错误,包括且不限于以下情况
+
+* 在设置了**JAVA_HOME**后被后安装的版本覆盖(如本图,选择了JDK18)
+* 压根没有设置**JAVA_HOME**
+* 在设置了**JAVA_HOME**后没有重启cmd
+
+#### 如何修改呢?
+
+1.找到你的Java目录
+
+ - 结构一般为 ***磁盘符:\目录1\目录2***
+ - 不要带结尾的 "***\bin***"!
+
+2.打开你的环境变量设置
+
+ - 右键 **我的电脑** ,点击 **属性**
+ - 找到并点击 **高级设置**,在新出来的页面中下拉,并点击 **环境变量**
+
+	- ![选择高级系统设置~](C:\Users\Chara\Desktop\2.png)
+	- ![点击环境变量~](C:\Users\Chara\Desktop\3.png)
+
+3.设置**JAVA_HOME**
+
+ - 若没有**JAVA_HOME**,请先新建一个
+ - 在他对应的变量值中,填写你在步骤1中找到的目录
+	- ![环境变量](C:\Users\Chara\Desktop\4.png)
+	- 请**务必不要**按照本图的变量值去填写你的,**除非你的安装位置和我一模一样**
+
+4.重启cmd
+
+ - 很多人在修改完后发现没有起效,原因是没有重启cmd
+
+5.结束
+
