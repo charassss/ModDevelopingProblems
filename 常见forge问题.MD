@@ -8,6 +8,8 @@
 
 ![ERROR: JAVA_HOME is set to an invalid directory: XXX:\XXXX\XXXX](./1.jpg)
 
+![](./5.png)
+
 这种情况一般是因为环境变量中的**JAVA_HOME**出现了错误,包括且不限于以下情况
 
 * 在设置了**JAVA_HOME**后被后安装的版本覆盖(如本图,选择了JDK18)
